@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\bin\Debug\Repeticao.exe.config
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\bin\Debug\Repeticao.exe
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\bin\Debug\Repeticao.pdb
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.csprojResolveAssemblyReference.cache
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.Form1.resources
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.Properties.Resources.resources
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.csproj.GenerateResource.Cache
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.exe
+c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.pdb

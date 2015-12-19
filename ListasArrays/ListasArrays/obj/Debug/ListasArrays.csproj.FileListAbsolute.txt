@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\bin\Debug\ListasArrays.exe.config
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\bin\Debug\ListasArrays.exe
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\bin\Debug\ListasArrays.pdb
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.csprojResolveAssemblyReference.cache
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.Form1.resources
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.Properties.Resources.resources
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.csproj.GenerateResource.Cache
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.exe
+c:\users\henrique\documents\visual studio 2015\Projects\ListasArrays\ListasArrays\obj\Debug\ListasArrays.pdb

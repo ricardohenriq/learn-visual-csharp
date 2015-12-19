@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.exe.config
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\bin\Debug\EstruturasDeControle.pdb
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.Properties.Resources.resources
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.csproj.GenerateResource.Cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.pdb
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\EstruturasDeControle\EstruturasDeControle\obj\Debug\EstruturasDeControle.estruturaControle.resources

@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.config
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\bin\Debug\HelloWorld.pdb
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csprojResolveAssemblyReference.cache
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Form1.resources
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.Properties.Resources.resources
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.GenerateResource.Cache
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
+c:\users\henrique\documents\visual studio 2015\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb

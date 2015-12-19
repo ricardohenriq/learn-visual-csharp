@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\bin\Debug\TiposPrimitivosVariaveis.exe.config
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\bin\Debug\TiposPrimitivosVariaveis.exe
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\bin\Debug\TiposPrimitivosVariaveis.pdb
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.csprojResolveAssemblyReference.cache
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.Form1.resources
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.Properties.Resources.resources
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.csproj.GenerateResource.Cache
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.exe
+c:\users\henrique\documents\visual studio 2015\Projects\TiposPrimitivosVariaveis\TiposPrimitivosVariaveis\obj\Debug\TiposPrimitivosVariaveis.pdb

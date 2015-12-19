@@ -1,0 +1,9 @@
+c:\users\henrique\documents\visual studio 2015\Projects\Heranca\Heranca\bin\Debug\Heranca.exe.config
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\bin\Debug\Heranca.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\bin\Debug\Heranca.pdb
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.ZooHome.resources
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.Properties.Resources.resources
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.csproj.GenerateResource.Cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\Heranca\Heranca\obj\Debug\Heranca.pdb
