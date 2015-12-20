@@ -76,6 +76,8 @@ namespace ClassesObjetos
             }
             catch (Exception ex)
             {
+                //throw new CustomException("Exception Lançada");
+                //throw new CustomException();
                 MessageBox.Show("Exception Lançada");
             }
         }

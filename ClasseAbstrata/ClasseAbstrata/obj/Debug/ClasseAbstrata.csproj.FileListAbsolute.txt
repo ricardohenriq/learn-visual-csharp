@@ -1,1 +1,9 @@
 c:\users\henrique\documents\visual studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\bin\Debug\ClasseAbstrata.exe.config
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\bin\Debug\ClasseAbstrata.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\bin\Debug\ClasseAbstrata.pdb
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.csprojResolveAssemblyReference.cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.ClasseAbstrata.resources
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.Properties.Resources.resources
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.csproj.GenerateResource.Cache
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.exe
+C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClasseAbstrata\ClasseAbstrata\obj\Debug\ClasseAbstrata.pdb
