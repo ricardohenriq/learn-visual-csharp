@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LINQLambda
+namespace SystemIO
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace LINQLambda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LINQLambda());
+            Application.Run(new SystemIO());
         }
     }
 }

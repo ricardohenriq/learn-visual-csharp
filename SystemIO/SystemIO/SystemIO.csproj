@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9652C62B-290F-453C-B6E5-6E712FD5A30A}</ProjectGuid>
+    <ProjectGuid>{FFCB2A9D-D9FB-489E-8610-E13B4FE02289}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LINQLambda</RootNamespace>
-    <AssemblyName>LINQLambda</AssemblyName>
+    <RootNamespace>SystemIO</RootNamespace>
+    <AssemblyName>SystemIO</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conta.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
