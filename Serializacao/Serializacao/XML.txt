@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfContaCorrente xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ContaCorrente>
+    <Saldo>42325.1234</Saldo>
+    <Titular>
+      <NomeCompleto>Bill Gates</NomeCompleto>
+      <Birthdate>2015-12-25T00:00:00</Birthdate>
+    </Titular>
+  </ContaCorrente>
+  <ContaCorrente>
+    <Saldo>54656.67</Saldo>
+    <Titular>
+      <NomeCompleto>Steve Jobs</NomeCompleto>
+      <Birthdate>2015-12-25T00:00:00</Birthdate>
+    </Titular>
+  </ContaCorrente>
+  <ContaCorrente>
+    <Saldo>123.2342</Saldo>
+    <Titular>
+      <NomeCompleto>Obama</NomeCompleto>
+      <Birthdate>2015-12-25T00:00:00</Birthdate>
+    </Titular>
+  </ContaCorrente>
+</ArrayOfContaCorrente>

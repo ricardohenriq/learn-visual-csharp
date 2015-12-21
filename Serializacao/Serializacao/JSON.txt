@@ -1,0 +1,23 @@
+[
+  {
+    "Saldo": 42325.1234,
+    "Titular": {
+      "Name": "Bill Gates",
+      "Birthdate": "2015-12-25T00:00:00"
+    }
+  },
+  {
+    "Saldo": 54656.67,
+    "Titular": {
+      "Name": "Steve Jobs",
+      "Birthdate": "2015-12-25T00:00:00"
+    }
+  },
+  {
+    "Saldo": 123.2342,
+    "Titular": {
+      "Name": "Obama",
+      "Birthdate": "2015-12-25T00:00:00"
+    }
+  }
+]
