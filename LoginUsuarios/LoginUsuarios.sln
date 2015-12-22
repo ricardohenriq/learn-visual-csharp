@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginUsuarios", "LoginUsuarios\LoginUsuarios.csproj", "{C7873F51-0A2B-49A7-B65F-17D6213B2A3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repositorio", "Repositorio\Repositorio.csproj", "{DDEBADC7-0292-4D00-952B-DC4A1A73486B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7873F51-0A2B-49A7-B65F-17D6213B2A3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7873F51-0A2B-49A7-B65F-17D6213B2A3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7873F51-0A2B-49A7-B65F-17D6213B2A3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7873F51-0A2B-49A7-B65F-17D6213B2A3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDEBADC7-0292-4D00-952B-DC4A1A73486B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDEBADC7-0292-4D00-952B-DC4A1A73486B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDEBADC7-0292-4D00-952B-DC4A1A73486B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDEBADC7-0292-4D00-952B-DC4A1A73486B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
