@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Repositorio;
+using Repositorio; //Tem de adicionar uma referencia a este projeto 
+//Solution Explorer -> Add -> Reference -> Project
+using Repositorio.Entidades;
 
 namespace LoginUsuarios
 {
@@ -35,7 +37,7 @@ namespace LoginUsuarios
             }
             try
             {
-                usuarioRepo = new UsuarioRepositorio();
+                UsuarioRepositorio usuarioRepo = new UsuarioRepositorio();
                 if ((usuarioRepo.ValidarAcesso(loginTextBox.Text, passwordTextBox.Text)))
                 {
                     MessageBox.Show("Login efetuado com sucesso");
@@ -49,6 +51,50 @@ namespace LoginUsuarios
             {
                 MessageBox.Show("Erro ao acessar o sistema" + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void singUpButton_Click(object sender, EventArgs e)
+        {
+            ErrorProvider singUpFormError = new ErrorProvider();
+            singUpFormError.Clear();
+            if (nameTextBox.Text == string.Empty)
+            {
+                singUpFormError.SetError(nameTextBox, "Informe o nome do usuário");
+                return;
+            }
+            if (loginSingUptextBox.Text == string.Empty)
+            {
+                singUpFormError.SetError(loginSingUptextBox, "Informe o login do usuário");
+                return;
+            }
+            if (passwordSingUpTextBox.Text == string.Empty)
+            {
+                singUpFormError.SetError(passwordSingUpTextBox, "Informe a senha do usuário");
+                return;
+            }
+            UsuarioRepositorio usuarioRepo = new UsuarioRepositorio();
+            if ((usuarioRepo.ValidarLogin(loginSingUptextBox.Text)))
+            {
+                MessageBox.Show("Login já esta Cadastrado", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+                try
+                {
+                    Usuario user = new Usuario();
+                    user.Login = loginSingUptextBox.Text;
+                    user.Nome = nameTextBox.Text;
+                    user.Senha = passwordSingUpTextBox.Text;
+                    user.Status = 'A';
+                    usuarioRepo.Inserir(user);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro ao cadastrar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                MessageBox.Show("Login Cadastrado com sucesso", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
         }
     }
 }

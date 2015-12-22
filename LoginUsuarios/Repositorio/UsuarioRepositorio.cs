@@ -9,7 +9,7 @@ using NHibernate.Linq;
 
 namespace Repositorio
 {
-    public class UsuarioRepositorio
+    public class UsuarioRepositorio : Repositorio<Usuario>
     {
         public bool ValidarLogin(string login)
         {

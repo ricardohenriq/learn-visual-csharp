@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using NHibernate;
-using MySql.Data.MySqlClient;
 
 namespace Repositorio
 {
@@ -25,7 +24,7 @@ namespace Repositorio
             {
                 return session;
             }
-            IPersistenceConfigurer configDB = MySQLConfiguration.Standard.ConnectionString(c => c.FromConnectionStringWithKey(ConnectionString));
+            IPersistenceConfigurer configDB = MySQLConfiguration.Standard.ConnectionString(ConnectionString);
             var configMap = Fluently.Configure().Database(configDB).Mappings(c => c.FluentMappings.AddFromAssemblyOf<Mapeamento.UsuarioMap>());
             session = configMap.BuildSessionFactory();
             return session;

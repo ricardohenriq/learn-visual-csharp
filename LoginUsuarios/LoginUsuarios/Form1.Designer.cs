@@ -135,6 +135,7 @@
             resources.ApplyResources(this.singUpButton, "singUpButton");
             this.singUpButton.Name = "singUpButton";
             this.singUpButton.UseVisualStyleBackColor = true;
+            this.singUpButton.Click += new System.EventHandler(this.singUpButton_Click);
             // 
             // listAllButton
             // 
