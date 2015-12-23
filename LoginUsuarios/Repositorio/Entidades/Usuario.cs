@@ -13,6 +13,16 @@ namespace Repositorio.Entidades
         public virtual string Login { get; set; }
         public virtual string Senha { get; set; }
         public virtual char Status { get; set; }
+        public virtual Endereco EnderecoResidencial { get; set; }
 
+        public override string ToString()
+        {
+            return "Id:" + Id  + "\n" +
+                "Nome:" + Nome + "\n" +
+                "Login:" + Login + "\n" +
+                "Senha:" + Senha + "\n" +
+                "Status:" + Status + "\n" +
+                EnderecoResidencial.ToString();
+        }
     }
 }

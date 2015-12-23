@@ -30,21 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.loginGroupBox = new System.Windows.Forms.GroupBox();
-            this.loginLabel = new System.Windows.Forms.Label();
-            this.passwordLabel = new System.Windows.Forms.Label();
-            this.loginTextBox = new System.Windows.Forms.TextBox();
-            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.loginButton = new System.Windows.Forms.Button();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.loginLabel = new System.Windows.Forms.Label();
             this.singUpGroupBox = new System.Windows.Forms.GroupBox();
-            this.nameLabel = new System.Windows.Forms.Label();
+            this.singUpButton = new System.Windows.Forms.Button();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.passwordSingUpTextBox = new System.Windows.Forms.TextBox();
             this.loginSingUptextBox = new System.Windows.Forms.TextBox();
             this.passwordSingUpLabel = new System.Windows.Forms.Label();
             this.loginSingUpLabel = new System.Windows.Forms.Label();
-            this.nameTextBox = new System.Windows.Forms.TextBox();
-            this.singUpButton = new System.Windows.Forms.Button();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.listAllButton = new System.Windows.Forms.Button();
-            this.listOneButton = new System.Windows.Forms.Button();
             this.loginGroupBox.SuspendLayout();
             this.singUpGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -60,32 +59,32 @@
             this.loginGroupBox.Name = "loginGroupBox";
             this.loginGroupBox.TabStop = false;
             // 
-            // loginLabel
-            // 
-            resources.ApplyResources(this.loginLabel, "loginLabel");
-            this.loginLabel.Name = "loginLabel";
-            // 
-            // passwordLabel
-            // 
-            resources.ApplyResources(this.passwordLabel, "passwordLabel");
-            this.passwordLabel.Name = "passwordLabel";
-            // 
-            // loginTextBox
-            // 
-            resources.ApplyResources(this.loginTextBox, "loginTextBox");
-            this.loginTextBox.Name = "loginTextBox";
-            // 
-            // passwordTextBox
-            // 
-            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
-            this.passwordTextBox.Name = "passwordTextBox";
-            // 
             // loginButton
             // 
             resources.ApplyResources(this.loginButton, "loginButton");
             this.loginButton.Name = "loginButton";
             this.loginButton.UseVisualStyleBackColor = true;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
+            // 
+            // passwordTextBox
+            // 
+            resources.ApplyResources(this.passwordTextBox, "passwordTextBox");
+            this.passwordTextBox.Name = "passwordTextBox";
+            // 
+            // loginTextBox
+            // 
+            resources.ApplyResources(this.loginTextBox, "loginTextBox");
+            this.loginTextBox.Name = "loginTextBox";
+            // 
+            // passwordLabel
+            // 
+            resources.ApplyResources(this.passwordLabel, "passwordLabel");
+            this.passwordLabel.Name = "passwordLabel";
+            // 
+            // loginLabel
+            // 
+            resources.ApplyResources(this.loginLabel, "loginLabel");
+            this.loginLabel.Name = "loginLabel";
             // 
             // singUpGroupBox
             // 
@@ -100,10 +99,17 @@
             this.singUpGroupBox.Name = "singUpGroupBox";
             this.singUpGroupBox.TabStop = false;
             // 
-            // nameLabel
+            // singUpButton
             // 
-            resources.ApplyResources(this.nameLabel, "nameLabel");
-            this.nameLabel.Name = "nameLabel";
+            resources.ApplyResources(this.singUpButton, "singUpButton");
+            this.singUpButton.Name = "singUpButton";
+            this.singUpButton.UseVisualStyleBackColor = true;
+            this.singUpButton.Click += new System.EventHandler(this.singUpButton_Click);
+            // 
+            // nameTextBox
+            // 
+            resources.ApplyResources(this.nameTextBox, "nameTextBox");
+            this.nameTextBox.Name = "nameTextBox";
             // 
             // passwordSingUpTextBox
             // 
@@ -125,35 +131,22 @@
             resources.ApplyResources(this.loginSingUpLabel, "loginSingUpLabel");
             this.loginSingUpLabel.Name = "loginSingUpLabel";
             // 
-            // nameTextBox
+            // nameLabel
             // 
-            resources.ApplyResources(this.nameTextBox, "nameTextBox");
-            this.nameTextBox.Name = "nameTextBox";
-            // 
-            // singUpButton
-            // 
-            resources.ApplyResources(this.singUpButton, "singUpButton");
-            this.singUpButton.Name = "singUpButton";
-            this.singUpButton.UseVisualStyleBackColor = true;
-            this.singUpButton.Click += new System.EventHandler(this.singUpButton_Click);
+            resources.ApplyResources(this.nameLabel, "nameLabel");
+            this.nameLabel.Name = "nameLabel";
             // 
             // listAllButton
             // 
             resources.ApplyResources(this.listAllButton, "listAllButton");
             this.listAllButton.Name = "listAllButton";
             this.listAllButton.UseVisualStyleBackColor = true;
-            // 
-            // listOneButton
-            // 
-            resources.ApplyResources(this.listOneButton, "listOneButton");
-            this.listOneButton.Name = "listOneButton";
-            this.listOneButton.UseVisualStyleBackColor = true;
+            this.listAllButton.Click += new System.EventHandler(this.listAllButton_Click);
             // 
             // login
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.listOneButton);
             this.Controls.Add(this.listAllButton);
             this.Controls.Add(this.singUpGroupBox);
             this.Controls.Add(this.loginGroupBox);
@@ -183,7 +176,6 @@
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.Button singUpButton;
         private System.Windows.Forms.Button listAllButton;
-        private System.Windows.Forms.Button listOneButton;
     }
 }
 

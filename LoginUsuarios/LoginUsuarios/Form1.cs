@@ -87,14 +87,27 @@ namespace LoginUsuarios
                     user.Senha = passwordSingUpTextBox.Text;
                     user.Status = 'A';
                     usuarioRepo.Inserir(user);
+                    MessageBox.Show("Login Cadastrado com sucesso", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Erro ao cadastrar " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                MessageBox.Show("Login Cadastrado com sucesso", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
 
+        private void listAllButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                UsuarioRepositorio repositorio = new UsuarioRepositorio();
+                var listUsuario = repositorio.Consultar();
+                MessageBox.Show(listUsuario.ElementAt(0).ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao listar todos os usuários " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

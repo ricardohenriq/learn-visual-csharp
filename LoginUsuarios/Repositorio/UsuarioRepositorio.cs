@@ -26,5 +26,13 @@ namespace Repositorio
                 return (from e in session.Query<Usuario>() where e.Login.Equals(login) && e.Senha.Equals(senha) select e).Count() > 0;
             }
         }
+
+        public IList<Usuario> Consultar()
+        {
+            using (ISession session = SessionFactory.AbrirSession())
+            {
+                return (from c in session.Query<Usuario>().Fetch(c => c.EnderecoResidencial) select c).ToList();
+            }
+        }
     }
 }

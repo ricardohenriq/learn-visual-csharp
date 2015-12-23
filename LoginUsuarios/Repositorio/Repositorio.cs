@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NHibernate;
 using NHibernate.Linq;
+using Repositorio.Entidades;
 
 namespace Repositorio
 {

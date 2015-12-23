@@ -25,7 +25,10 @@ namespace Repositorio
                 return session;
             }
             IPersistenceConfigurer configDB = MySQLConfiguration.Standard.ConnectionString(ConnectionString);
-            var configMap = Fluently.Configure().Database(configDB).Mappings(c => c.FluentMappings.AddFromAssemblyOf<Mapeamento.UsuarioMap>());
+            var configMap = Fluently.Configure().Database(configDB)
+                .Mappings(c => c.FluentMappings.AddFromAssemblyOf<Mapeamento.UsuarioMap>())
+                .Mappings(c => c.FluentMappings.AddFromAssemblyOf<Mapeamento.EnderecoMap>())
+                .Mappings(c => c.FluentMappings.AddFromAssemblyOf<Mapeamento.FornecedorMap>());
             session = configMap.BuildSessionFactory();
             return session;
         }
