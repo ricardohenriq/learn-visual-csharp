@@ -67,7 +67,7 @@
             this.addGroupBox.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.addGroupBox.Location = new System.Drawing.Point(12, 12);
             this.addGroupBox.Name = "addGroupBox";
-            this.addGroupBox.Size = new System.Drawing.Size(260, 238);
+            this.addGroupBox.Size = new System.Drawing.Size(260, 234);
             this.addGroupBox.TabIndex = 0;
             this.addGroupBox.TabStop = false;
             this.addGroupBox.Text = "Cadastro";
@@ -75,7 +75,7 @@
             // functionTextBox
             // 
             this.functionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.functionTextBox.Location = new System.Drawing.Point(119, 211);
+            this.functionTextBox.Location = new System.Drawing.Point(119, 146);
             this.functionTextBox.Name = "functionTextBox";
             this.functionTextBox.Size = new System.Drawing.Size(121, 20);
             this.functionTextBox.TabIndex = 16;
@@ -83,7 +83,7 @@
             // idTextBox
             // 
             this.idTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idTextBox.Location = new System.Drawing.Point(119, 179);
+            this.idTextBox.Location = new System.Drawing.Point(119, 203);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(121, 20);
             this.idTextBox.TabIndex = 15;
@@ -99,7 +99,7 @@
             // specieTextBox
             // 
             this.specieTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.specieTextBox.Location = new System.Drawing.Point(119, 86);
+            this.specieTextBox.Location = new System.Drawing.Point(119, 92);
             this.specieTextBox.Name = "specieTextBox";
             this.specieTextBox.Size = new System.Drawing.Size(121, 20);
             this.specieTextBox.TabIndex = 13;
@@ -107,7 +107,7 @@
             // borndateDateTimePicker
             // 
             this.borndateDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.borndateDateTimePicker.Location = new System.Drawing.Point(119, 150);
+            this.borndateDateTimePicker.Location = new System.Drawing.Point(119, 174);
             this.borndateDateTimePicker.Name = "borndateDateTimePicker";
             this.borndateDateTimePicker.Size = new System.Drawing.Size(121, 20);
             this.borndateDateTimePicker.TabIndex = 12;
@@ -117,7 +117,7 @@
             this.functionLabel.AutoSize = true;
             this.functionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.functionLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.functionLabel.Location = new System.Drawing.Point(7, 219);
+            this.functionLabel.Location = new System.Drawing.Point(7, 154);
             this.functionLabel.Name = "functionLabel";
             this.functionLabel.Size = new System.Drawing.Size(46, 13);
             this.functionLabel.TabIndex = 9;
@@ -128,7 +128,7 @@
             this.idLabel.AutoSize = true;
             this.idLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.idLabel.Location = new System.Drawing.Point(7, 187);
+            this.idLabel.Location = new System.Drawing.Point(7, 211);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(21, 13);
             this.idLabel.TabIndex = 8;
@@ -139,7 +139,7 @@
             this.borndateLabel.AutoSize = true;
             this.borndateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borndateLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.borndateLabel.Location = new System.Drawing.Point(7, 156);
+            this.borndateLabel.Location = new System.Drawing.Point(7, 180);
             this.borndateLabel.Name = "borndateLabel";
             this.borndateLabel.Size = new System.Drawing.Size(66, 13);
             this.borndateLabel.TabIndex = 7;
@@ -214,7 +214,7 @@
             // 
             this.singUpButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.singUpButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.singUpButton.Location = new System.Drawing.Point(94, 256);
+            this.singUpButton.Location = new System.Drawing.Point(94, 257);
             this.singUpButton.Name = "singUpButton";
             this.singUpButton.Size = new System.Drawing.Size(75, 23);
             this.singUpButton.TabIndex = 2;
@@ -226,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 301);
+            this.ClientSize = new System.Drawing.Size(284, 289);
             this.Controls.Add(this.addGroupBox);
             this.Controls.Add(this.singUpButton);
             this.Name = "ZooHome";

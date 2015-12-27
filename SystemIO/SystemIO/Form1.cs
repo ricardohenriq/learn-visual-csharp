@@ -63,6 +63,9 @@ namespace SystemIO
             try
             {
                 string path = "C:\\Users\\Henrique\\Documents\\Visual Studio 2015\\Projects\\SystemIO\\SystemIO\\SAIDA.txt";
+                /*Usar o arroba @ indica que a string deve ser interpretada como um literal
+                string path = @"C:\Users\Henrique\Documents\Visual Studio 2015\Projects\SystemIO\SystemIO\SAIDA.txt";
+                */
                 //string path = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "SAIDA.txt");
                 if (!File.Exists(path))
                 {
