@@ -9,6 +9,9 @@ using Repositorio.Entidades;
 
 namespace Repositorio
 {
+    /*Classe repositorio com um Generics "T" implementando uma interface que também utiliza 
+    um Generics de determinada classe "T", "where T : class" isto é uma constrait do que "T"
+    deve ser: class, struct, new(), <base class name>, <interface name>, U*/
     public class Repositorio<T> : IUsuarioCrud<T> where T : class
     {
         public void Inserir(T entidade)

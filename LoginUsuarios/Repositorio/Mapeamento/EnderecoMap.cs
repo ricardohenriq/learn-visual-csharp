@@ -18,6 +18,7 @@ namespace Repositorio.Mapeamento
             Map(c => c.Lote);
             Map(c => c.Bairro);
             Map(c => c.CEP);
+            Map(c => c.Complemento);
             Map(c => c.PontoReferencia).Column("ponto_referencia");
             Table("enderecos");
         }

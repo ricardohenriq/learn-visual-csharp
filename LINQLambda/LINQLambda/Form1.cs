@@ -23,6 +23,9 @@ namespace LINQLambda
 
         private void searchButton_Click(object sender, EventArgs e)
         {
+            /*O Compilador pode inferir o tipo de cada variavel em uma Lambda, logo ele inferirá 
+            que o o tipo de "c" é "Conta", a esquerda do "=>" esta o que será passado à lambda, 
+            a direita as operações que a lambda irá realizar*/
             Conta conta = bank.Find(c => c.Titular == correntistaTextBox.Text);
             MessageBox.Show(conta.ToString());
         }

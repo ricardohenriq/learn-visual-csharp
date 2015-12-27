@@ -13,6 +13,7 @@ using Repositorio.Entidades;
 
 namespace LoginUsuarios
 {
+    /*A classe "login" extende da classe "Form"*/
     public partial class login : Form
     {
         public login()

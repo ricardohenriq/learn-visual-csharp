@@ -17,6 +17,24 @@ namespace Repositorio.Entidades
         public virtual string Complemento { get; set; }
         public virtual string PontoReferencia { get; set; }
 
+        public Endereco()
+        {
+
+        }
+        
+        public Endereco(int Id, string Rua, string Quadra, string Lote, string Bairro,
+            string CEP, string Complemento, string PontoReferencia)
+        {
+            this.Id = Id;
+            this.Rua = Rua;
+            this.Quadra = Quadra;
+            this.Lote = Lote;
+            this.Bairro = Bairro;
+            this.CEP = CEP;
+            this.Complemento = Complemento;
+            this.PontoReferencia = PontoReferencia;
+        }
+
         public override string ToString()
         {
             return "Id: " + Id + "\n" +
