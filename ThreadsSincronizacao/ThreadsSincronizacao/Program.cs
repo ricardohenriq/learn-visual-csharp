@@ -11,45 +11,46 @@ namespace ThreadsSincronizacao
     {
         static void Main(string[] args)
         {
-            int result = 0;   // Result initialized to say there is no error
+            int result = 0;//Irá armazenar os erros, se tiverem
+            //A classe Cell é que possui os métodos de escrita e produção
             Cell cell = new Cell();
 
-            CellProd prod = new CellProd(cell, 20);  // Use cell for storage, 
-                                                     // produce 20 items
-            CellCons cons = new CellCons(cell, 20);  // Use cell for storage, 
-                                                     // consume 20 items
+            //A classe CellProd é que irá fazer as chamadas ao metodo podutor de cell 
+            //(no caso 20 cahamadas)
+            CellProd prod = new CellProd(cell, 20);
+            //A classe CellCons é que irá fazer as chamadas ao metodo consumidor de cell 
+            //(no caso 20 cahamadas)
+            CellCons cons = new CellCons(cell, 20);
 
+            //Cria uma tread com o método que irá Consumir
             Thread producer = new Thread(new ThreadStart(prod.ThreadRun));
+            //Cria uma tread com o método que irá Produzir
             Thread consumer = new Thread(new ThreadStart(cons.ThreadRun));
-            // Threads producer and consumer have been created, 
-            // but not started at this point.
 
             try
             {
+                //Inicia ambas as threads
                 producer.Start();
                 consumer.Start();
 
-                producer.Join();   // Join both threads with no timeout
-                                   // Run both until done.
+                //Pausa a thread corrente e aguarda ambas as threads terminarem suas execuções
+                producer.Join();
                 consumer.Join();
-                // threads producer and consumer have finished at this point.
             }
             catch (ThreadStateException e)
             {
-                Console.WriteLine(e);  // Display text of exception
-                result = 1;            // Result says there was an error
+                Console.WriteLine(e);
+                result = 1;
             }
             catch (ThreadInterruptedException e)
             {
-                Console.WriteLine(e);  // This exception means that the thread
-                                       // was interrupted during a Wait
-                result = 1;            // Result says there was an error
+                Console.WriteLine(e);
+                result = 1;
             }
 
             Console.ReadKey();
 
-            // Even though Main returns void, this provides a return code to 
-            // the parent process.
+            // Embora Main retorna void, isso fornece um código de retorno para o processo pai.
             Environment.ExitCode = result;
         }
     }

@@ -10,7 +10,7 @@ namespace Threads
 {
     public class Alpha
     {
-        // This method that will be called when the thread is started
+		//Este método será chamado quando a thread for iniciada.
         public void Beta()
         {
             while (true)

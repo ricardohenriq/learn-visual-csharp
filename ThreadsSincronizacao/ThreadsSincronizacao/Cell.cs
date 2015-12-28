@@ -9,17 +9,26 @@ namespace ThreadsSincronizacao
 {
     public class Cell
     {
-        int cellContents;         // Cell contents
-        bool readerFlag = false;  // State flag
+        //Conteudo da celula
+        int cellContents;
+        //Flag de estado de produção e consumo
+        //false: Consumido pode Produzir mais
+        //true: Produzido mas não Comsumido 
+        bool readerFlag = false;
         public int ReadFromCell()
         {
-            lock (this)   // Enter synchronization block
+            //Garante que uma thread não entre em uma seção crítica 
+            //do código enquanto outro thread está na seção crítica. 
+            //(No caso esta mesma instancia de objeto "this") 
+            //Se outro segmento tenta digitar um código bloqueado, esperará, 
+            // para bloquear, até que o objeto seja liberado.
+            lock (this)
             {
                 if (!readerFlag)
-                {            // Wait until Cell.WriteToCell is done producing
+                {            //Espera até Cell.WriteToCell produzir
                     try
                     {
-                        // Waits for the Monitor.Pulse in WriteToCell
+                        //Aguarda o Monitor.Pulse em WriteToCell
                         //Libera o bloqueio em um objeto e bloqueia o thread 
                         //atual até que ele readquire o bloqueio.
                         //No caso o objeto é a própria instancia.
@@ -35,29 +44,29 @@ namespace ThreadsSincronizacao
                     }
                 }
                 Console.WriteLine("Consume: {0}", cellContents);
-                readerFlag = false;    // Reset the state flag to say consuming
-                                       // is done.
-                Monitor.Pulse(this);   // Pulse tells Cell.WriteToCell that
-                                       // Cell.ReadFromCell is done.
-            }   // Exit synchronization block
+                //Reseta o estado para Consumido pode Produzir mais
+                readerFlag = false;
+                //Pulse diz a Cell.WriteToCell que o método Cell.ReadFromCell esta concluido
+                Monitor.Pulse(this);
+            }
             return cellContents;
         }
 
         public void WriteToCell(int n)
         {
-            //Garante que um thread não entre em uma seção crítica 
+            //Garante que uma thread não entre em uma seção crítica 
             //do código enquanto outro thread está na seção crítica. 
             //(No caso esta mesma instancia de objeto "this") 
             //Se outro segmento tenta digitar um código bloqueado, esperará, 
             // para bloquear, até que o objeto seja liberado.
-            lock (this)  // Enter synchronization block
+            lock (this)
             {
                 if (readerFlag)
-                {      // Wait until Cell.ReadFromCell is done consuming.
+                {      //Espera até Cell.ReadToCell consumir
                     try
                     {
-                        Monitor.Wait(this);   // Wait for the Monitor.Pulse in
-                                              // ReadFromCell
+                        //Aguarda o Monitor.Pulse em ReadFromCell
+                        Monitor.Wait(this);
                     }
                     catch (SynchronizationLockException e)
                     {
@@ -70,13 +79,13 @@ namespace ThreadsSincronizacao
                 }
                 cellContents = n;
                 Console.WriteLine("Produce: {0}", cellContents);
-                readerFlag = true;    // Reset the state flag to say producing
-                                      // is done
+                //Reseta o estado para Produzido mas não Comsumido
+                readerFlag = true;
                 //Notifica um thread na fila de espera de uma alteração no estado do objeto bloqueado.
                 //No caso notifica a própria instancia.
-                Monitor.Pulse(this);  // Pulse tells Cell.ReadFromCell that 
-                                      // Cell.WriteToCell is done.
-            }   // Exit synchronization block
+                //Pulse diz a Cell.ReadToCell que o método Cell.WriteFromCell esta concluido
+                Monitor.Pulse(this);
+            }
         }
     }
 }

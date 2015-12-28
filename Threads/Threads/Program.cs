@@ -16,26 +16,30 @@ namespace Threads
 
             Alpha alpha = new Alpha();
 
-            // Create the thread object, passing in the Alpha.Beta method
-            // via a ThreadStart delegate. This does not start the thread.
+            //Em Java as classes que irão usar threads devem extender/implementar 
+            //uma classe/interface própria em C# deve-se passar o método.
+            //Cria-se um objeto da classe Thread passando um método que será paralelizado, 
+            //neste caso "Alpha.Beta()"
             Thread thread = new Thread(new ThreadStart(alpha.Beta));
 
-            // Start the thread
+            //Inicia a Thread
             thread.Start();
 
-            // Spin for a while waiting for the started thread to become
-            // alive:
-            while (!thread.IsAlive) ;
+            //IsAlive: true Se esse thread tiver sido iniciado e não foi encerrado normalmente 
+            //ou anulada; Caso contrário, false.
+            //Espera até que a thread seja iniacializada (apesar de "thread.Start();" iniciar 
+            //a thread isso não garante que a thread tomou o controle da CPU alguma vez).
+            while (!thread.IsAlive);
 
-            // Put the Main thread to sleep for 1 millisecond to allow thread
-            // to do some work:
+            //Põe a Thread corrente (no caso a thread principal Program.cs) em espera por 
+            //1 milisegundo liberando o processador para outra Thread assumir o controle
             Thread.Sleep(1);
 
-            // Request that thread be stopped
+            //Requisita que a thread pare a sua execução (isso não garante que ela pare é só um pedido, 
+            //ela pode estar executando uma operação atomica no momento por exemplo)
             thread.Abort();
 
-            // Wait until thread finishes. Join also has overloads
-            // that take a millisecond interval or a TimeSpan object.
+            // faz com que outras threads espere por ela até que ela acabe sua execução.
             thread.Join();
 
             Console.WriteLine();
@@ -44,6 +48,7 @@ namespace Threads
             try
             {
                 Console.WriteLine("Try to restart the Alpha.Beta thread");
+                //Impossível uma vez que a thread foi abortada ela não pode ser reiniciada
                 thread.Start();
             }
             catch (ThreadStateException)
@@ -52,6 +57,7 @@ namespace Threads
                 Console.WriteLine("Expected since aborted threads cannot be restarted.");
             }
 
+            //Mantém o console aberto até que alguma tecla seja acionada
             Console.ReadKey();
             return 0;
         }

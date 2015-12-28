@@ -18,57 +18,17 @@ namespace Heranca
         {
             zoo = new Zoo() {Name = "Zoologico"};
             InitializeComponent();
-            createTypeEntityComboBox();
+            this.createTypeEntityComboBox();
+            this.hideAnimalFields();
+            this.hideHumanFields();
+            this.hideCommomFields();
+            
         }
 
         public void createTypeEntityComboBox()
         {
             typeEntityComboBox.Items.Add("Humano");
             typeEntityComboBox.Items.Add("Animal");
-        }
-
-        private void typeEntityComboBox_SelectedValueChanged(object sender, EventArgs e)
-        {
-            if (typeEntityComboBox.Text == "Humano")
-            {
-                MessageBox.Show("Humano");
-            }
-            else if (typeEntityComboBox.Text == "Animal")
-            {
-                MessageBox.Show("Animal");
-            }
-        }
-
-        private void createHumanComponents()
-        {
-            TextBox function = new TextBox();
-            function.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            function.Location = new System.Drawing.Point(119, 211);
-            function.Name = "functionTextBox";
-            function.Size = new System.Drawing.Size(121, 20);
-            function.TabIndex = 16;
-
-            this.Controls.Add(function);
-        }
-
-        private void createAnimalComponents()
-        {
-            TextBox origin = new TextBox();
-            origin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            origin.Location = new System.Drawing.Point(119, 119);
-            origin.Name = "originTextBox";
-            origin.Size = new System.Drawing.Size(121, 20);
-            origin.TabIndex = 14;
-
-            TextBox specie = new TextBox();
-            specie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            specie.Location = new System.Drawing.Point(119, 86);
-            specie.Name = "specieTextBox";
-            specie.Size = new System.Drawing.Size(121, 20);
-            specie.TabIndex = 13;
-
-            this.Controls.Add(specie);
-            this.Controls.Add(origin);
         }
 
         private void singUpButton_Click(object sender, EventArgs e)
@@ -104,6 +64,70 @@ namespace Heranca
             };
             zoo.Entities.Add(animal);
             MessageBox.Show(animal.ToString());
+        }
+
+        public void hideAnimalFields()
+        {
+            specieLabel.Hide();
+            specieTextBox.Hide();
+            originLabel.Hide();
+            originTextBox.Hide();
+        }
+
+        public void hideHumanFields()
+        {
+            functionLabel.Hide();
+            functionTextBox.Hide();
+        }
+
+        public void hideCommomFields()
+        {
+            entityTypeLabel.Hide();
+            typeComboBox.Hide();
+            borndateLabel.Hide();
+            borndateDateTimePicker.Hide();
+            idLabel.Hide();
+            idTextBox.Hide();
+        }
+
+        public void showHumanFields()
+        {
+            functionLabel.Show();
+            functionTextBox.Show();
+        }
+
+        public void showAnimalFields()
+        {
+            specieLabel.Show();
+            specieTextBox.Show();
+            originLabel.Show();
+            originTextBox.Show();
+        }
+
+        public void showCommomFields()
+        {
+            entityTypeLabel.Show();
+            typeComboBox.Show();
+            borndateLabel.Show();
+            borndateDateTimePicker.Show();
+            idLabel.Show();
+            idTextBox.Show();
+        }
+
+        private void typeEntityComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (typeEntityComboBox.Text == "Humano")
+            {
+                this.hideAnimalFields();
+                this.showHumanFields();
+                this.showCommomFields();
+            }
+            else if (typeEntityComboBox.Text == "Animal")
+            {
+                this.hideHumanFields();
+                this.showAnimalFields();
+                this.showCommomFields();
+            }
         }
     }
 }

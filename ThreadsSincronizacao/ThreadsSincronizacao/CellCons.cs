@@ -8,19 +8,24 @@ namespace ThreadsSincronizacao
 {
     public class CellCons
     {
-        Cell cell;         // Field to hold cell object to be used
-        int quantity = 1;  // Field for how many items to consume from cell
+        //Instancia de Cell (esta instancia é a mesma de CellProd)
+        Cell cell;
+        //Quantos itens serão poduzidos pela cell
+        int quantity = 1;
 
         public CellCons(Cell box, int request)
         {
-            cell = box;          // Pass in what cell object to be used
-            quantity = request;  // Pass in how many items to consume from cell
+            cell = box;
+            quantity = request;
         }
+
+        //Este é o método que foi passado no construtor da Thread
         public void ThreadRun()
         {
             int valReturned;
-            for (int looper = 1; looper <= quantity; looper++) {
-                // Consume the result by placing it in valReturned.
+            for (int looper = 1; looper <= quantity; looper++)
+            {
+                //Irá chamar o método que irá produzir
                 valReturned = cell.ReadFromCell();
             }
         }

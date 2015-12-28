@@ -13,8 +13,8 @@ namespace ThreadsMutex
         {
             IncThread myt1 = new IncThread();
             DecThread myt2 = new DecThread();
-            //myt1.thrd.Join();
-            //myt2.thrd.Join();
+            myt1.th.Join();
+            myt2.th.Join();
             Console.Read();
         }
     }

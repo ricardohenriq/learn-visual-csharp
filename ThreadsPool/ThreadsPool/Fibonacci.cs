@@ -16,24 +16,27 @@ namespace ThreadsPool
         public int N { get { return _n; } }
         public int FibOfN { get { return _fibOfN; } }
 
-        // Constructor.
         public Fibonacci(int n, ManualResetEvent doneEvent)
         {
             _n = n;
+            //Armazena a referencia a instancia do objeto (implicitamente é passado somente 
+            //um ponteiro)
             _doneEvent = doneEvent;
         }
 
-        // Wrapper method for use with thread pool.
+        // Encapsula o método que será usado no ThreadPool.
         public void ThreadPoolCallback(Object threadContext)
         {
             int threadIndex = (int)threadContext;
             Console.WriteLine("thread {0} started...", threadIndex);
             _fibOfN = Calculate(_n);
             Console.WriteLine("thread {0} result calculated...", threadIndex);
+            //Define o estado do evento para sinalizado, que permite que uma ou mais threads 
+            //esperando possam prosseguir.
             _doneEvent.Set();
         }
 
-        // Recursive method that calculates the Nth Fibonacci number.
+        //Método recursivo que calcula o número N Fibonacci.
         public int Calculate(int n)
         {
             if (n <= 1)

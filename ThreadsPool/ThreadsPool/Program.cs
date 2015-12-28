@@ -30,24 +30,33 @@ namespace ThreadsPool
     {
         public static void Main(string[] args)
         {
+            //Numero de threads a serem criadas
             const int FibonacciCalculations = 10;
 
-            // One event is used for each Fibonacci object.
+            //Um evento para cada Objeto Fibonacci, este evento será setado como false 
+            //primeiramente e dentro do objeto será setado como true após o final da execução 
+            //da thread
             ManualResetEvent[] doneEvents = new ManualResetEvent[FibonacciCalculations];
+
+            //Cria um array de classe Fibonacci
             Fibonacci[] fibArray = new Fibonacci[FibonacciCalculations];
             Random r = new Random();
 
-            // Configure and start threads using ThreadPool.
             Console.WriteLine("launching {0} tasks...", FibonacciCalculations);
             for (int i = 0; i < FibonacciCalculations; i++)
             {
+                //Preenche cada posição do array com um objeto da classe ManualResetEvent setado como false
                 doneEvents[i] = new ManualResetEvent(false);
+                //Cria uma instancia de Fibonacci com um valor e um evento que será setado como true 
+                //quando a thread se encerrar
                 Fibonacci f = new Fibonacci(r.Next(20, 40), doneEvents[i]);
                 fibArray[i] = f;
+                //Adiciona o método "ThreadPoolCallback" do objeto da classe Fibonacci ao ThreadPool
+                //o "i" será passado como parametro para o método "ThreadPoolCallback"
                 ThreadPool.QueueUserWorkItem(f.ThreadPoolCallback, i);
             }
 
-            // Wait for all threads in pool to calculate.
+            //Aguarda todas as theads do pool finalizarem sua execução
             WaitHandle.WaitAll(doneEvents);
             Console.WriteLine("All calculations are complete.");
 
