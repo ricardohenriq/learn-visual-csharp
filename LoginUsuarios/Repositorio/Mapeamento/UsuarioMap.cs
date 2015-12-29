@@ -12,6 +12,7 @@ namespace Repositorio.Mapeamento
     {
         public UsuarioMap()
         {
+            //Indica que desejo que o carregamento de entidades recursivamente sejam LazyLoad
             LazyLoad();
             Id(c => c.Id);
             Map(c => c.Nome);

@@ -11,6 +11,8 @@ using Repositorio; //Tem de adicionar uma referencia a este projeto
 //Solution Explorer -> Add -> Reference -> Project
 using Repositorio.Entidades;
 
+//Deve conter somente os metodos relacionados às telas, toda a logica deve ser 
+//separada em um projeto "Class Library"
 namespace LoginUsuarios
 {
     /*A classe "login" extende da classe "Form"*/

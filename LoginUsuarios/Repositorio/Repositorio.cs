@@ -16,19 +16,26 @@ namespace Repositorio
     {
         public void Inserir(T entidade)
         {
+            //Cria uma sessão (poderia usar o mesmo using)
             using (ISession session = SessionFactory.AbrirSession())
             {
+                //Cria uma transação (poderia usar o mesmo using)
                 using (ITransaction transacao = session.BeginTransaction())
                 {
                     try
                     {
+                        //Persiste o objeto no banco
                         session.Save(entidade);
+                        //Comita a transação
                         transacao.Commit();
                     }
                     catch (Exception ex)
                     {
+                        //Verifica se o objeto foi corretamente iserido no banco e a transação 
+                        //foi corretamente comitada
                         if (!transacao.WasCommitted)
                         {
+                            //Faz rollback caso o obejto não tenha sido inserido no banco
                             transacao.Rollback();
                         }
                         throw new Exception("Erro ao inserir Cliente : " + ex.Message);
@@ -39,19 +46,26 @@ namespace Repositorio
 
         public void Alterar(T entidade)
         {
+            //Cria uma sessão (poderia usar o mesmo using)
             using (ISession session = SessionFactory.AbrirSession())
             {
+                //Cria uma transação (poderia usar o mesmo using)
                 using (ITransaction transacao = session.BeginTransaction())
                 {
                     try
                     {
+                        //Atualiza o objeto no banco
                         session.Update(entidade);
+                        //Comita a transação
                         transacao.Commit();
                     }
                     catch (Exception ex)
                     {
+                        //Verifica se o objeto foi corretamente iserido no banco e a transação 
+                        //foi corretamente comitada
                         if (!transacao.WasCommitted)
                         {
+                            //Faz rollback caso o obejto não tenha sido inserido no banco
                             transacao.Rollback();
                         }
                         throw new Exception("Erro ao Alterar Cliente : " + ex.Message);
@@ -62,19 +76,26 @@ namespace Repositorio
 
         public void Excluir(T entidade)
         {
+            //Cria uma sessão (poderia usar o mesmo using)
             using (ISession session = SessionFactory.AbrirSession())
             {
+                //Cria uma transação (poderia usar o mesmo using)
                 using (ITransaction transacao = session.BeginTransaction())
                 {
                     try
                     {
+                        //Deleta o objeto no banco
                         session.Delete(entidade);
+                        //Comita a transação
                         transacao.Commit();
                     }
                     catch (Exception ex)
                     {
+                        //Verifica se o objeto foi corretamente iserido no banco e a transação 
+                        //foi corretamente comitada
                         if (!transacao.WasCommitted)
                         {
+                            //Faz rollback caso o obejto não tenha sido inserido no banco
                             transacao.Rollback();
                         }
                         throw new Exception("Erro ao Excluir Cliente : " + ex.Message);
@@ -85,16 +106,20 @@ namespace Repositorio
 
         public T RetornarPorId(int Id)
         {
+            //Cria uma sessão
             using (ISession session = SessionFactory.AbrirSession())
             {
+                //Recupera um objeto com base no Id
                 return session.Get<T>(Id);
             }
         }
 
         public IList<T> Consultar()
         {
+            //Cria uma sessão
             using (ISession session = SessionFactory.AbrirSession())
             {
+                //Realiza um select no banco
                 return (from c in session.Query<T>() select c).ToList();
             }
         }
