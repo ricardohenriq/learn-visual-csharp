@@ -32,7 +32,7 @@ CREATE TABLE enderecos(
 	FOREIGN KEY usuario_key (usuario_id) REFERENCES usuarios(id)
 );
 
-CREATE TABLE fornecedors(
+CREATE TABLE fornecedores(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	CNPJ CHAR(14),
 	nome_fantasia VARCHAR(100),

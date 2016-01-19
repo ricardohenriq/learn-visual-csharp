@@ -30,7 +30,7 @@ namespace Serializacao
             StreamWriter escritor = null;
             try
             {
-                string path = "C:\\Users\\Henrique\\Documents\\Visual Studio 2015\\Projects\\Serializacao\\Serializacao\\JSON.txt";
+                string path = @"C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Serializacao\Serializacao\JSON.txt";
                 if (!File.Exists(path))
                 {
                     File.Create(path).Close();
@@ -55,7 +55,7 @@ namespace Serializacao
 
         private void fromJSONButton_Click(object sender, EventArgs e)
         {
-            string path = "C:\\Users\\Henrique\\Documents\\Visual Studio 2015\\Projects\\Serializacao\\Serializacao\\JSON.txt";
+            string path = @"C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Serializacao\Serializacao\JSON.txt";
             string texto = "";
             if (File.Exists(path))
             {
@@ -71,7 +71,7 @@ namespace Serializacao
 
         private void toXMLButton_Click(object sender, EventArgs e)
         {
-            string path = "C:\\Users\\Henrique\\Documents\\Visual Studio 2015\\Projects\\Serializacao\\Serializacao\\XML.txt";
+            string path = @"C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Serializacao\Serializacao\XML.txt";
 
             List<ContaCorrente> contaCorrenteList = loadContaCorrente();
 
@@ -84,7 +84,7 @@ namespace Serializacao
 
         private void FromXMLButton_Click(object sender, EventArgs e)
         {
-            string path = "C:\\Users\\Henrique\\Documents\\Visual Studio 2015\\Projects\\Serializacao\\Serializacao\\XML.txt";
+            string path = @"C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Serializacao\Serializacao\XML.txt";
             XmlSerializer deserializer = new XmlSerializer(typeof(List<ContaCorrente>));
             TextReader reader = new StreamReader(path);
             List<ContaCorrente> contaCorrenteList = (List<ContaCorrente>)deserializer.Deserialize(reader);
