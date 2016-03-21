@@ -11,3 +11,6 @@ C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesOb
 C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\obj\Debug\ClassesObjetos.DeleteAccount.resources
 C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\obj\Debug\ClassesObjetos.Depositar.resources
 C:\Users\Henrique\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\obj\Debug\ClassesObjetos.Sacar.resources
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\bin\Debug\ClassesObjetos.exe.config
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\obj\Debug\ClassesObjetos.exe
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\ClassesObjetos\ClassesObjetos\obj\Debug\ClassesObjetos.pdb

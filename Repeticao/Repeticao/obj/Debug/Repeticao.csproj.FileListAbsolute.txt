@@ -7,3 +7,6 @@ c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\
 c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.csproj.GenerateResource.Cache
 c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.exe
 c:\users\henrique\documents\visual studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.pdb
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Repeticao\Repeticao\bin\Debug\Repeticao.exe.config
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.exe
+C:\Users\Ricardo\Documents\Visual Studio 2015\Projects\Repeticao\Repeticao\obj\Debug\Repeticao.pdb
